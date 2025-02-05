@@ -13,7 +13,7 @@ export const getPosts = (req, res, next) => {
     if (!isNaN(limit) && limit > 0) {
        return res.status(200).json(posts.slice(0, limit));
     } 
-
+    
     res.status(200).json(posts);
 }; 
 
